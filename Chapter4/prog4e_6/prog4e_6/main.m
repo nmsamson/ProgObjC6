@@ -19,10 +19,60 @@
 
 #import <Foundation/Foundation.h>
 
+//---- @interface section ----
+
+@interface Complex: NSObject
+-(void) setReal: (double) a;
+-(void) setImaginary: (double) b;
+-(void) print;
+-(double) getReal;
+-(double) getImaginary;
+@end
+
+//---- @implementation section ----
+@implementation Complex
+{
+    double real;
+    double imaginary;
+}
+
+-(void) setReal: (double) a
+{
+    real = a;
+}
+
+-(void) setImaginary: (double) b
+{
+    imaginary = b;
+}
+
+-(void) print
+{
+    NSLog(@"Output is: %f %fi", real, imaginary);
+}
+
+-(double) getReal
+{
+    return real;
+}
+
+-(double) getImaginary
+{
+    return imaginary;
+}
+@end
+
+//---- program section ----
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Complex *complex = [[Complex alloc] init];
+        
+        [complex setReal: 5];
+        [complex setImaginary: 12];
+        [complex print];
+        
+        NSLog(@"The result is: %f %fi", [complex getReal], [complex getImaginary]);
     }
     return 0;
 }
