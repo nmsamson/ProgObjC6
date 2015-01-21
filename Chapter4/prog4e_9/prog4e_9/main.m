@@ -10,6 +10,8 @@
 //      -(double) changeSign;   // change sign of accumulator
 //      -(double) reciprocal;   // 1/accumulator
 //      -(double) xSquared;     // accumulator squared
+//
+//  Adding a comment to test something.
 
 #import <Foundation/Foundation.h>
 
