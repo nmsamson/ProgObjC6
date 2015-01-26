@@ -17,6 +17,28 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        //  It helps if you actually read the instructions...
+        /*
+        int x = 1, n = 0, m = 0;
+        
+        while ( x <= 50 ) {
+            m += 5;
+            
+            for ( ; x<= m; ++x )
+                n = n + x;
+            
+            NSLog (@" The %ith triangular number is %i", x - 1, n);
+        }*/
+        
+        NSLog (@"n  triangular");
+        NSLog (@"-- ----------");
+        
+        int x = 1, n = 0;
+        
+        for ( x = 5; x <= 50; x += 5 ) {
+            n = x * ( x + 1 ) / 2;
+            NSLog (@"%2i %i", x, n);
+        }
     }
     return 0;
 }
