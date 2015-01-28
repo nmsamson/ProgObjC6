@@ -1,10 +1,14 @@
 //
 //  main.m
-//  prog6_2
+//  prog6e_3
 //
-//  Created by Nicole Samson on 1/26/15.
+//  Created by Nicole Samson on 1/27/15.
 //  Copyright (c) 2015 Nicole Samson. All rights reserved.
 //
+//  Chapter 6, Exercise 3
+//    Modify the print method from the Fraction class so that whole numbers are displayed as such
+//    (so the fraction 5/1 should display as simply 5). Also modify the method to display fractions
+//    with a numerator of 0 is simply 0.
 
 #import <Foundation/Foundation.h>
 
@@ -25,7 +29,15 @@
     int denominator;
 }
 
--(void) print { NSLog (@" %i / %i ", numerator, denominator); }
+-(void) print
+{
+    if ( numerator == 0 )
+        NSLog (@"0");
+    else if ( denominator != 0  &&  numerator % denominator == 0 )
+        NSLog (@"%i", numerator / denominator);
+    else
+        NSLog (@" %i / %i ", numerator, denominator);
+}
 
 -(void) setNumerator: (int) n { numerator = n; }
 
@@ -50,8 +62,8 @@ int main(int argc, const char * argv[]) {
         Fraction *aFraction = [[Fraction alloc] init];
         Fraction *bFraction = [[Fraction alloc] init];
         
-        [aFraction setNumerator: 4];
-        [aFraction setDenominator: 1];
+        [aFraction setNumerator: 2];
+        [aFraction setDenominator: 5];
         
         [aFraction print];
         NSLog (@" =");
