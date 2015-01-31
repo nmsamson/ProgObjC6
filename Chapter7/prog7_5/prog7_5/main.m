@@ -1,8 +1,8 @@
 //
 //  main.m
-//  prog7_4
+//  prog7_5
 //
-//  Created by Nicole Samson on 1/30/15.
+//  Created by Nicole Samson on 1/31/15.
 //  Copyright (c) 2015 Nicole Samson. All rights reserved.
 //
 
@@ -12,6 +12,8 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Fraction *aFraction = [[Fraction alloc] init];
         Fraction *bFraction = [[Fraction alloc] init];
+        
+        Fraction *resultFraction;
         
         //  Set two fractions to 1/4 and 1/2 and add them together
         
@@ -25,12 +27,8 @@ int main(int argc, const char * argv[]) {
         [bFraction print];
         NSLog (@"=");
         
-        [aFraction add: bFraction];
-        
-        //  reduce the result of the addition and print the result
-        
-        [aFraction reduce];
-        [aFraction print];
+        resultFraction = [aFraction add: bFraction];
+        [resultFraction print];
     }
     return 0;
 }

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Nicole Samson. All rights reserved.
 //
 
-#import "prog7_3.h"
+#import "Fraction.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {

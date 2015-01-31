@@ -1,12 +1,12 @@
 //
-//  prog7_3.m
-//  prog7_3
+//  Fraction.m
+//  prog7_4
 //
-//  Created by Nicole Samson on 1/29/15.
+//  Created by Nicole Samson on 1/31/15.
 //  Copyright (c) 2015 Nicole Samson. All rights reserved.
 //
 
-#import "prog7_3.h"
+#import "Fraction.h"
 
 @implementation Fraction
 
@@ -37,6 +37,22 @@
     
     numerator = numerator * f.denominator + denominator * f.numerator;
     denominator = denominator * f.denominator;
+}
+
+-(void) reduce
+{
+    int u = numerator;
+    int v = denominator;
+    int temp;
+    
+    while ( v!= 0 ) {
+        temp = u % v;
+        u = v;
+        v = temp;
+    }
+    
+    numerator /= u;
+    denominator /= u;
 }
 
 @end

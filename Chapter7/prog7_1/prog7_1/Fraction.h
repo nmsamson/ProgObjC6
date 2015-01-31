@@ -1,8 +1,8 @@
 //
-//  prog7_2.h
-//  prog7_2
+//  Fraction.h
+//  prog7_1
 //
-//  Created by Nicole Samson on 1/28/15.
+//  Created by Nicole Samson on 1/31/15.
 //  Copyright (c) 2015 Nicole Samson. All rights reserved.
 //
 
@@ -12,9 +12,11 @@
 
 @interface Fraction : NSObject
 
-@property int numerator, denominator;
-
 -(void)     print;
+-(void)     setNumerator: (int) n;
+-(void)     setDenominator: (int) d;
+-(int)      getNumerator;
+-(int)      getDenominator;
 -(double)   convertToNum;
 
 @end

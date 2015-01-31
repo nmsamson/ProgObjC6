@@ -1,8 +1,8 @@
 //
-//  prog7_2a.h
-//  prog7_2a
+//  Fraction.h
+//  prog7_1a
 //
-//  Created by Nicole Samson on 1/28/15.
+//  Created by Nicole Samson on 1/31/15.
 //  Copyright (c) 2015 Nicole Samson. All rights reserved.
 //
 
@@ -15,7 +15,6 @@
 @property int numerator, denominator;
 
 -(void)     print;
--(void)     setNumerator: (int) n andDenominator: (int) d;
 -(double)   convertToNum;
 
 @end

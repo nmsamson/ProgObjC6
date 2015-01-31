@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CFA0F6141A79F7360024C093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA0F6131A79F7360024C093 /* main.m */; };
-		CFA0F61C1A79F74C0024C093 /* prog7_1.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA0F61B1A79F74C0024C093 /* prog7_1.m */; };
+		CFA3E0A81A7D22FC006D04C4 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA3E0A71A7D22FC006D04C4 /* Fraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		CFA0F6101A79F7360024C093 /* prog7_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog7_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA0F6131A79F7360024C093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CFA0F61A1A79F74C0024C093 /* prog7_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prog7_1.h; sourceTree = "<group>"; };
-		CFA0F61B1A79F74C0024C093 /* prog7_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = prog7_1.m; sourceTree = "<group>"; };
+		CFA3E0A61A7D22FC006D04C4 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		CFA3E0A71A7D22FC006D04C4 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				CFA0F6131A79F7360024C093 /* main.m */,
-				CFA0F61A1A79F74C0024C093 /* prog7_1.h */,
-				CFA0F61B1A79F74C0024C093 /* prog7_1.m */,
+				CFA3E0A61A7D22FC006D04C4 /* Fraction.h */,
+				CFA3E0A71A7D22FC006D04C4 /* Fraction.m */,
 			);
 			path = prog7_1;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA0F6141A79F7360024C093 /* main.m in Sources */,
-				CFA0F61C1A79F74C0024C093 /* prog7_1.m in Sources */,
+				CFA3E0A81A7D22FC006D04C4 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +238,7 @@
 				CFA0F6191A79F7360024C093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

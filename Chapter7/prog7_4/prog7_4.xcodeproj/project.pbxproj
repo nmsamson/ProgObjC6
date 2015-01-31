@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFA3E0B71A7D248C006D04C4 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA3E0B61A7D248C006D04C4 /* Fraction.m */; };
 		CFF8C3301A7C6E430066A17E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF8C32F1A7C6E420066A17E /* main.m */; };
-		CFF8C33B1A7C71DE0066A17E /* prog7_4.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF8C33A1A7C71DE0066A17E /* prog7_4.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CFA3E0B51A7D248C006D04C4 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		CFA3E0B61A7D248C006D04C4 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		CFF8C32C1A7C6E420066A17E /* prog7_4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog7_4; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF8C32F1A7C6E420066A17E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CFF8C3391A7C71DE0066A17E /* prog7_4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prog7_4.h; sourceTree = "<group>"; };
-		CFF8C33A1A7C71DE0066A17E /* prog7_4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = prog7_4.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				CFF8C32F1A7C6E420066A17E /* main.m */,
-				CFF8C3391A7C71DE0066A17E /* prog7_4.h */,
-				CFF8C33A1A7C71DE0066A17E /* prog7_4.m */,
+				CFA3E0B51A7D248C006D04C4 /* Fraction.h */,
+				CFA3E0B61A7D248C006D04C4 /* Fraction.m */,
 			);
 			path = prog7_4;
 			sourceTree = "<group>";
@@ -123,8 +123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF8C33B1A7C71DE0066A17E /* prog7_4.m in Sources */,
 				CFF8C3301A7C6E430066A17E /* main.m in Sources */,
+				CFA3E0B71A7D248C006D04C4 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +238,7 @@
 				CFF8C3351A7C6E430066A17E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

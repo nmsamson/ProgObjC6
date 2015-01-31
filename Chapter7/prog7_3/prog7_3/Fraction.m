@@ -1,18 +1,19 @@
 //
-//  prog7_2a.m
-//  prog7_2a
+//  Fraction.m
+//  prog7_3
 //
-//  Created by Nicole Samson on 1/28/15.
+//  Created by Nicole Samson on 1/31/15.
 //  Copyright (c) 2015 Nicole Samson. All rights reserved.
 //
 
-#import "prog7_2a.h"
+#import "Fraction.h"
 
 @implementation Fraction
 
 @synthesize numerator, denominator;
 
 -(void) print { NSLog (@"%i/%i", numerator, denominator); }
+
 -(double) convertToNum
 {
     if ( denominator == 0 )
@@ -25,6 +26,17 @@
 {
     numerator = n;
     denominator = d;
+}
+
+//  add a Fraction to the receiver
+
+-(void) add: (Fraction *) f
+{
+    //  To add two fractions:
+    //  a/b + c/d = ((a*d) + (b*c)) / (b * d)
+    
+    numerator = numerator * f.denominator + denominator * f.numerator;
+    denominator = denominator * f.denominator;
 }
 
 @end
