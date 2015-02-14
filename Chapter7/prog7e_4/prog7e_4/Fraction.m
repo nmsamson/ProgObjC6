@@ -17,12 +17,14 @@
     int n, d, w;
     bool isNeg;
     
-    w = numerator / denominator;
-    n = numerator - ( w * denominator );
+    w = 0;
+    n = numerator;
     d = denominator;
-
-    if ( numerator < 0 )
+    
+    if ( n < 0 ) {
         isNeg = YES;
+        n = -n;
+    }
     else
         isNeg = NO;
     
@@ -31,8 +33,13 @@
             NSLog (@"0");
         else if ( numerator % denominator == 0 )
             NSLog (@"%i", numerator / denominator );
-        else if ( numerator > denominator ) {
-                NSLog (@"%i %i/%i", w, n, d);
+        else if ( n > d ) {
+            w = n / d;
+            n = n - ( w * d );
+            d = d;
+            if ( isNeg )
+                w = -w;
+            NSLog (@"%i %i/%i", w, n, d);
         }
         else
             NSLog (@"%i/%i", numerator, denominator);

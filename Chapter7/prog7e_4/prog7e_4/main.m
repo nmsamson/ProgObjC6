@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
         
         //  Set two fractions to 1/4 and 1/2 and add them together
         
-        [aFraction setNumerator: 1 andDenominator: 2 andIsNegative: YES];
+        [aFraction setNumerator: 1 andDenominator: 2 andIsNegative: NO];
         [bFraction setNumerator: 3 andDenominator: 4 andIsNegative: NO];
         
         //  Print the results
