@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CF4D22A51A97BF4C00C72EF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4D22A41A97BF4C00C72EF8 /* main.m */; };
+		CF4D22AD1A98055000C72EF8 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4D22AC1A98055000C72EF8 /* Rectangle.m */; };
+		CF4D22B01A98058800C72EF8 /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4D22AF1A98058800C72EF8 /* XYPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		CF4D22A11A97BF4C00C72EF8 /* prog8e_6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog8e_6; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4D22A41A97BF4C00C72EF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF4D22AB1A98055000C72EF8 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		CF4D22AC1A98055000C72EF8 /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		CF4D22AE1A98058800C72EF8 /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
+		CF4D22AF1A98058800C72EF8 /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				CF4D22A41A97BF4C00C72EF8 /* main.m */,
+				CF4D22AB1A98055000C72EF8 /* Rectangle.h */,
+				CF4D22AC1A98055000C72EF8 /* Rectangle.m */,
+				CF4D22AE1A98058800C72EF8 /* XYPoint.h */,
+				CF4D22AF1A98058800C72EF8 /* XYPoint.m */,
 			);
 			path = prog8e_6;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF4D22A51A97BF4C00C72EF8 /* main.m in Sources */,
+				CF4D22B01A98058800C72EF8 /* XYPoint.m in Sources */,
+				CF4D22AD1A98055000C72EF8 /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +244,7 @@
 				CF4D22AA1A97BF4C00C72EF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
